@@ -195,7 +195,7 @@ lazy val examples = crossProject(JSPlatform, JVMPlatform, NativePlatform).crossT
     libraryDependencies ++= {
       CrossVersion.partialVersion(scalaVersion.value) match {
         case Some((2, scalaMajor)) if scalaMajor >= 11 =>
-          Seq("org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.1")
+          Seq("org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.2-KH")
         case _ => Seq()
       }
     }
